@@ -5,7 +5,7 @@ public class Bee extends Insect {
     Color deadBeeColor = new Color(100, 100, 100);  // Цвет мертвой пчелы
     Color fedBeeColor = new Color(255, 0, 0);  // Цвет сытой пчелы
 
-    int feedingTime; // Переменная для хранения времени, которое пчела тратит на питие
+    int feedingTime; // Переменная для хранения времени, которое пчела тратит на "питание"
     int lifeStrength;  // Переменная для хранения жизненной силы пчелы
 
     public Bee(int positionX, int positionY) {
