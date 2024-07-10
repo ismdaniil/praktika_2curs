@@ -1,7 +1,7 @@
 import java.awt.*;
 
-public class Lichinka extends Muravei{
-    Color trudovoysacolor = new Color(255,255,255); //Цвет яйца
+public class Lichinka extends Pchela{
+    Color trudovoysacolor = new Color(255,255,255); //Цвет личинки // белый
     public Lichinka(int koordinX, int koordinY){
         super(koordinX,koordinY);
         LifePower = Example.MaxLifePower;
@@ -24,11 +24,11 @@ public class Lichinka extends Muravei{
             napravlenie = Example.Napravlenie.STAY;
             LifePower--;
             if(LifePower < 1){
-                //Яйцо выбыло по старой координате
+                //Личинка выбыла по старой координате
                 mypole.pol[kletk.koordinataX][kletk.koordinataY].setNasekomoe(null);
                 mypole.pol[kletk.koordinataX][kletk.koordinataY].flagpererisovki = true;
-                //Появлися новый муравей по старой координате
-                mypole.pol[kletk.koordinataX][kletk.koordinataY].nas = new Muravei(kletk.koordinataX, kletk.koordinataY);
+                //Появилась новая пчела по старой координате
+                mypole.pol[kletk.koordinataX][kletk.koordinataY].nas = new Pchela(kletk.koordinataX, kletk.koordinataY);
                 mypole.pol[kletk.koordinataX][kletk.koordinataY].flagpererisovki = true;
             }
         }
